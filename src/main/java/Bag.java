@@ -34,7 +34,7 @@ public abstract class Bag {
         this.color = color;
         this.capacity = capacity;
         this.numberOfContents = 0;
-        this.contents = new String[capacity]
+        this.contents = new String[capacity];
     }
 
 
@@ -81,7 +81,7 @@ public abstract class Bag {
         if (numberOfContents < capacity ){
             contents[numberOfContents] = item;
             numberOfContents += 1;
-            return true
+            return true;
         }
         return false;
     }
@@ -118,10 +118,10 @@ public abstract class Bag {
         // TODO: Implement this method.
         String[] new_contents = new String[capacity + n];
         for (int i=1; i<numberOfContents; i++ ){
-            new_contents[i] = contents[i]
+            new_contents[i] = contents[i];
         }
         contents = new_contents;
-        this.capacity += n
+        this.capacity += n;
 
     }
 
